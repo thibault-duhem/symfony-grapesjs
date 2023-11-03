@@ -15,11 +15,13 @@ class Page
     private ?int $id = null;
 
 	#[ORM\Column(type: Types::TEXT,nullable: true)]
-         	private ?string $json = null;
+	private ?string $json = null;
+
 	#[ORM\Column(type: Types::TEXT,nullable: true)]
-         	private ?string $css = null;
+	private ?string $css = null;
+
 	#[ORM\Column(type: Types::TEXT,nullable: true)]
-         	private ?string $html = null;
+	private ?string $html = null;
 
     #[ORM\Column(length: 255)]
     private ?string $title = null;
