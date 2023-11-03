@@ -36,6 +36,18 @@ class PageAdmin extends AbstractAdmin
 	{
 		$list->addIdentifier('id');
 		$list->addIdentifier('title');
+		$list->add(ListMapper::NAME_ACTIONS, null, [
+			'actions' => [
+				'show' => [],
+				'edit' => [
+					// You may add custom link parameters used to generate the action url
+					'link_parameters' => [
+						'full' => true,
+					]
+				],
+				'delete' => [],
+			]
+		]);
 	}
 
 	protected function configureShowFields(ShowMapper $show): void
