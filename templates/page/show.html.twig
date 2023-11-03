@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+
+{% block style %}
+    {{ page.css|raw }}
+{% endblock %}
+
+{% block body %}
+    {{ page.html | raw }}
+{% endblock %}

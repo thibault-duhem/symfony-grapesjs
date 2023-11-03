@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@symfony/webpack-encore": "^4.5.0",
+    "grapesjs": "^0.21.7",
+    "grapesjs-blocks-basic": "^1.0.2",
+    "grapesjs-plugin-ckeditor": "^1.0.1",
+    "grapesjs-preset-newsletter": "^1.0.2",
+    "grapesjs-preset-webpage": "^1.0.3"
+  },
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.2",
+    "webpack-notifier": "^1.15.0"
+  }
+}

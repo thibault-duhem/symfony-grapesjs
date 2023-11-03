@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PageController!{% endblock %}
+
+
+{% block style %}
+    {{ object.css|raw }}
+{% endblock %}
+
+{% block body %}
+    {{ object.html | raw }}
+{% endblock %}
