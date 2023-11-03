@@ -32,42 +32,39 @@ class Page
     }
 
 	public function getJson(): ?string
-         	{
-         		return $this->json;
-         	}
+	{
+		return $this->json;
+	}
 
 	public function setJson(?string $json): static
-         	{
-         		$this->json = $json;
-         
-         		return $this;
-         	}
+	{
+		$this->json = $json;
+		return $this;
+	}
 
 
 	public function getHtml(): ?string
-         	{
-         		return $this->html;
-         	}
+	{
+		return $this->html;
+	}
 
 	public function setHtml(?string $html): static
-         	{
-         		$this->html = $html;
-         
-         		return $this;
-         	}
+	{
+		$this->html = $html;
+		return $this;
+	}
 
 
 	public function getCss(): ?string
-         	{
-         		return $this->css;
-         	}
+	{
+		return $this->css;
+	}
 
 	public function setCss(?string $css): static
-         	{
-         		$this->css = $css;
-         
-         		return $this;
-         	}
+	{
+		$this->css = $css;
+		return $this;
+	}
 
     public function getTitle(): ?string
     {
@@ -77,7 +74,6 @@ class Page
     public function setTitle(string $title): static
     {
         $this->title = $title;
-
         return $this;
     }
 }

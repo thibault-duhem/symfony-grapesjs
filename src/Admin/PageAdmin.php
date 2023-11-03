@@ -16,8 +16,7 @@ class PageAdmin extends AbstractAdmin
 	{
 		$form->add('title');
 
-		$form
-			->add('editor', TemplateType::class, [
+		$form->add('editor', TemplateType::class, [
 				'template'   => 'page/adminEdit.html.twig',
                   'parameters' => [
 					'id' => $this->getSubject()->getId(),
@@ -40,7 +39,6 @@ class PageAdmin extends AbstractAdmin
 			'actions' => [
 				'show' => [],
 				'edit' => [
-					// You may add custom link parameters used to generate the action url
 					'link_parameters' => [
 						'full' => true,
 					]
