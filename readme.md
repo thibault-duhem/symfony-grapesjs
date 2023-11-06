@@ -28,7 +28,7 @@ php bin/console d:m:m
 #### http://127.0.0.1:8000/admin
 
 ## Aller dans Page/Créer
-#### http://127.0.0.1:8000/admin/app/page/create --> Donner un titre et valider
+#### http://127.0.0.1:8000/admin/app/page/create 
 
 ## On est redirigé sur 
 #### http://127.0.0.1:8000/admin/app/page/{id}/edit --> On peut bricoler l'éditeur

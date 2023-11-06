@@ -25,4 +25,4 @@ services:
     admin.page:
         class: App\Admin\PageAdmin
         tags:
-            - { name: sonata.admin, model_class: App\Entity\Page, manager_type: orm, label: Page }
+            - { name: sonata.admin, model_class: App\Entity\Page, controller: App\Controller\PageAdminController, manager_type: orm, label: Page }
