@@ -20,8 +20,7 @@ php bin/console d:m:m
 
 
 # Procédure pour créer une page 
-##### Il faut d'abord créer la page avant de pouvoir l'éditer car on a besoin de l'id pour mettre à jour l'entité.
-###### Actuellement, les échanges entres l'entité et l'éditeur se font en ajax avec une api en continue. On pourra mettre un bouton (enregister) à l'avenir pour éviter trop de requêtes ajax
+##### Sauvegarde de l'éditeur toutes les 20 actions (modifiable), et sur clique du bouton update sonata
 
 
 ## Aller sur l'admin 

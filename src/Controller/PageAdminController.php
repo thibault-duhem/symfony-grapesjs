@@ -15,11 +15,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PageAdminController extends CRUDController
 {
-	public function createAction(Request $request): RedirectResponse{
+	public function createAction(Request $request): RedirectResponse
+	{
 		$page = $this->admin->getNewInstance();
 		$page->setTitle("Entrez un titre");
 		$this->admin->create($page);
 
 		return new RedirectResponse($this->admin->generateUrl('edit',['id'=>$page->getId()]));
 	}
+
 }

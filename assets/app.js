@@ -32,9 +32,9 @@ const editor = grapesjs.init({
     },
     storageManager: {
         type: 'remote', // Type of the storage, available: 'local' | 'remote'
-        // autosave: true, // Store data automatically
+        autosave: true, // Store data automatically
         autoload: true, // Autoload stored data on init
-        // stepsBeforeSave: 1, // If autosave enabled, indicates how many changes are necessary before store method is triggered
+         stepsBeforeSave: 20, // If autosave enabled, indicates how many changes are necessary before store method is triggered
         options: {
             remote: {
                 headers: {}, // Custom headers for the remote storage request
@@ -45,5 +45,30 @@ const editor = grapesjs.init({
                 onLoad: result => result.data,
             },
         }
+    },
+    commands: {
+        defaults: [
+            {
+                id: 'store-data',
+                run(editor) {
+                    editor.store();
+                },
+            }
+        ]
     }
+});
+
+console.log(document.getElementsByName("btn_update_and_edit")[0]);
+console.log(document.getElementsByName("btn_update_and_list")[0]);
+let btn_update_edit = document.getElementsByName("btn_update_and_edit")[0];
+let btn_update_close = document.getElementsByName("btn_update_and_list")[0];
+
+btn_update_edit.addEventListener('click', function(event) {
+    console.log('Bouton de mise à jour cliqué !');
+    editor.runCommand('store-data');
+});
+
+btn_update_close.addEventListener('click', function(event) {
+    console.log('Bouton de mise à jour cliqué !');
+    editor.runCommand('store-data');
 });
