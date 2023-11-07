@@ -58,17 +58,13 @@ const editor = grapesjs.init({
     }
 });
 
-console.log(document.getElementsByName("btn_update_and_edit")[0]);
-console.log(document.getElementsByName("btn_update_and_list")[0]);
 let btn_update_edit = document.getElementsByName("btn_update_and_edit")[0];
 let btn_update_close = document.getElementsByName("btn_update_and_list")[0];
 
 btn_update_edit.addEventListener('click', function(event) {
-    console.log('Bouton de mise à jour cliqué !');
     editor.runCommand('store-data');
 });
 
 btn_update_close.addEventListener('click', function(event) {
-    console.log('Bouton de mise à jour cliqué !');
     editor.runCommand('store-data');
 });
