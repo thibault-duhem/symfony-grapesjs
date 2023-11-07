@@ -16,7 +16,7 @@ const editor = grapesjs.init({
     pluginsOpts: {
         'gjs-plugin-ckeditor': {
             options: {
-                language: 'en',
+                language: 'fr',
                 extraPlugins: 'colorbutton,colordialog',
                 autoParagraph: false,
                 enterMode: 2,
